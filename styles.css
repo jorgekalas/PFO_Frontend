@@ -1,0 +1,308 @@
+/* Estilo base del sitio */
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background-color: #f4f4f4;
+  padding: 30px;
+  margin: 0;
+}
+
+/* Encabezados principales */
+h1, h2 {
+  text-align: center;
+  color: #333;
+}
+
+/* Enlaces */
+a {
+  color: #0077cc;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+/* ------------------------- */
+/* NAVBAR - Menú de navegación */ 
+/* ------------------------- */
+nav {
+  background-color: #fff;
+  padding: 10px 20px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  margin-bottom: 30px;
+  position: relative;
+}
+
+nav ul {
+  display: flex;
+  justify-content: center;
+  list-style: none;
+  gap: 30px;
+  margin: 0;
+  padding: 0;
+}
+
+nav li {
+  display: inline;
+}
+
+nav a {
+  font-weight: bold;
+  color: #333;
+  transition: color 0.3s ease;
+}
+
+nav a:hover {
+  color: #0077cc;
+}
+
+/* ------------------------- */
+/* SECCIÓN FOTO PERSONAL     */
+/* ------------------------- */
+section.foto_personal {
+  text-align: center;
+  margin: 30px 0;
+}
+
+.foto_personal img {
+  width: 50vw;             
+  min-width: 150px;       
+  max-width: 300px;        
+  height: auto;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+}
+
+figcaption {
+  margin-top: 10px;
+  color: #555;
+  font-size: 14px;
+}
+
+/* ------------------------- */
+/* SECCIÓN SOBRE MÍ (Intro) */
+/* ------------------------- */
+.intro {
+  max-width: 1000px;
+  margin: 0 auto;
+  text-align: center;
+  padding: 40px 20px;
+}
+
+.intro h1 {
+  font-size: 28px;
+  margin-bottom: 10px;
+}
+
+.intro h2 {
+  font-size: 24px;
+  margin: 30px 0 20px;
+}
+
+.bio-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 30px;
+  max-width: 1200px;
+  margin-inline: auto;
+}
+
+.bio-container p {
+  flex: 1 1 300px;
+  max-width: 350px;
+  font-size: 16px;
+  line-height: 1.6;
+  color: #333;
+  text-align: justify;
+
+  /* Estilo de tarjeta */
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.3s ease;
+  border: 2px solid transparent;
+}
+
+.bio-container p:hover {
+  border-color: rgba(0, 123, 255, 0.3);
+  box-shadow: 0 0 10px rgba(0, 123, 255, 0.1);
+  transform: translateY(-4px);
+}
+
+
+/* ------------------------- */
+/* SECCIÓN MIS REDES         */
+/* ------------------------- */
+.redes {
+  text-align: center;
+  padding: 40px 20px;
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.redes h2 {
+  font-size: 24px;
+  margin-bottom: 30px;
+}
+
+.redes-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 25px;
+}
+
+/* Diseño individual de cada red */
+.red {
+  flex: 1 1 300px;
+  max-width: 350px;
+}
+
+.red a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 15px;
+
+  background-color: #fff;
+  padding: 15px 20px;
+  border-radius: 10px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
+  text-decoration: none;
+  color: #0077cc;
+  font-weight: bold;
+  border: 2px solid transparent; 
+  transition: all 0.3s ease;
+
+  height: 100px; /* altura uniforme */
+  box-sizing: border-box;
+}
+
+.red a:hover {
+  box-shadow: 0 0 10px rgba(0, 123, 255, 0.2);
+  transform: translateY(-3px);
+  border-color: rgba(0, 123, 255, 0.3);
+}
+
+
+.red img {
+  width: 40px;
+  height: 40px;
+  object-fit: contain;
+}
+
+.red_github_text{
+  color: #000;
+}
+
+
+
+/* ------------------------- */
+/* STACK TECNOLÓGICO (Flexbox) */
+/* ------------------------- */
+.stack-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 30px;
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+
+.stack-grid article {
+  width: 135px;
+  height: 135px;
+  background-color: #fff;
+  border-radius: 12px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.05);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  transition: transform 0.3s ease;
+  border: 2px solid transparent;
+}
+
+.stack-grid article:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 0 10px rgba(0,123,255,0.15);
+  border-color: rgba(0, 123, 255, 0.3);
+}
+
+.stack-grid img {
+  width: 60px;
+  height: 60px;
+  object-fit: contain;
+  margin-bottom: 10px;
+}
+
+.stack-grid p {
+  font-size: 14px;
+  color: #34495e;
+  text-align: center;
+  margin: 0;
+}
+
+/* ------------------------- */
+/* FORMULARIO DE CONTACTO   */
+/* ------------------------- */
+form {
+  max-width: 500px;
+  margin: 30px auto;
+  background-color: #fff;
+  padding: 25px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+form div {
+  margin-bottom: 15px;
+}
+
+label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: bold;
+  color: #555;
+}
+
+input, textarea {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  box-sizing: border-box;
+  font-size: 14px;
+}
+
+button {
+  width: 100%;
+  padding: 12px;
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #45a049;
+}
+
+/* ------------------------- */
+/* PIE DE PÁGINA             */
+/* ------------------------- */
+footer {
+  text-align: center;
+  margin-top: 40px;
+  color: #777;
+  font-size: 14px;
+}
